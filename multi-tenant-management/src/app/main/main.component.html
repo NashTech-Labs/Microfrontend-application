@@ -1,0 +1,13 @@
+<div class="d-flex justify-content-evenly align-items-center flex-column vh-100">
+  <h1 class="text-center">Microfrontend Dashboard</h1>
+  <div class="card bg-secondary text-center p-2 w-50 ms-5 rounded-3">
+    <h5 class="card-title mb-3">Host Project Card</h5>
+    <div class="d-flex justify-content-around">
+      <button class="btn btn-primary mx-4" [routerLink]="['/angular']">Go to Angular</button>
+      <button class="btn btn-info" [routerLink]="['/react']">Go to React</button>
+    </div>
+  </div>
+<div class="text-center w-50 ms-5 ">
+    <router-outlet></router-outlet>
+</div>
+</div>
