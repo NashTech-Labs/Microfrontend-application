@@ -1,0 +1,238 @@
+.main-header {
+  margin-top: 10rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.edit-icon {
+  margin-left: 0%;
+  cursor: pointer;
+}
+
+#edit {
+  color: #42a5f5;
+}
+
+
+.margin-left {
+  margin-left: 2.5rem;
+}
+
+
+.style {
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+
+.search-heading {
+  text-align: left;
+  margin-left: 2rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.col-auto {
+  margin-left: 2rem;
+}
+
+.add-button {
+  margin-right: 1rem;
+}
+
+.search-container {
+  margin-top: 1.5rem;
+}
+
+#myInput {
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 12px 10px 10px 35px;
+  border-radius: 10px;
+}
+
+.search {
+  padding-top: 1rem;
+  margin-top: 0.3rem;
+  margin-left: 2.5rem;
+  padding-bottom: 1rem;
+  position: absolute;
+  font-size: 18px;
+}
+
+.search input {
+  width: 250px;
+  height: 32px;
+  background: #fcfcfc;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+}
+
+.search .fa-search {
+  position: absolute;
+  top: 10px;
+  left: auto;
+  right: 10px;
+}
+
+::ng-deep .delete-modal {
+  top: 30%;
+  width: 94% !important;
+  min-height: 50%;
+
+  .modal-content {
+    top: 0;
+  }
+
+  .modal-body {
+    box-shadow: none;
+  }
+}
+.content{
+  contain: content;
+}
+.example-table-container{
+  overflow-x: scroll;
+  // width: 100%;
+}
+
+table {
+  width: 100%;
+}
+
+td.mat-column-star {
+  width: 20px;
+  padding-right: 8px !important;
+}
+
+.mat-row {
+  &:hover {
+    background-color: #e9f3ff;
+  }
+  a {
+    color: #3e75ff;
+    text-decoration: none;
+    &:hover {
+    text-decoration: underline;
+    }
+  }
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+.mat-icon {
+  color: #3e75ff;
+}
+
+@media screen and (max-width: 960px) {
+  .mat-elevation-z8 {
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .mat-header-row {
+    display: none;
+  }
+
+  tbody {
+    display: block;
+    width: 100%;
+  }
+  
+  .mat-table {
+    background: transparent;
+    * {
+      box-sizing: border-box;
+    }
+
+    .mat-row {
+      display: block;
+      overflow: hidden;
+      height: auto;
+      position: relative;
+      clear: both;
+      box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+      background-color: #fff;
+      border-radius: 3px;
+      + .mat-row {
+        margin-top: 24px;
+      }
+    }
+
+    .mat-cell {
+      display: block;
+      width: 100%;
+      padding: 0 16px;
+      margin: 16px 0;
+      border: 0 none;
+      &:first-child {
+        padding: 0 48px 0 16px;
+        a {
+          font-size: 20px;
+          // font-weight: 400;
+          color: inherit;
+        }
+        &:before {
+          display: none;
+        }
+      }
+      &.m-card-sub-title {
+        margin-top: -8px;
+        padding: 0 48px 0 16px;
+        color: rgba(0,0,0,.54);
+      }
+    }
+
+    .has_label_on_mobile {
+      &:before {
+        content: attr(data-label);
+        display: inline;
+        font-weight: normal;
+      }
+    }
+
+    .mat-column-star {
+      width: auto;
+      padding: 8px 0 0 !important;
+      margin: 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  .mat-paginator {
+    margin-top: 24px;
+  }
+
+}
+
+@media screen  and (max-width: 576px){
+  .header{
+    display: flex;
+    justify-content: center !important;
+    margin: 8px;
+  }
+  .card{
+    margin: 0 22px !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  ::ng-deep .mat-mdc-paginator-page-size-select {
+    width: 12rem !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  ::ng-deep .mat-mdc-paginator-page-size-select {
+    width: 100px !important;
+  }
+}
